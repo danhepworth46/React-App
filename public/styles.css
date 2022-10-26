@@ -1,0 +1,130 @@
+ 
+  *{
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+
+  .navbar{
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+  }
+
+  .navbar-brand{
+    margin-top: -2px;
+    margin-left: 15px;
+  }
+
+  .navbar-toggler{
+    border: none;
+  }
+  
+  .toggler{
+    color: white;
+  }
+
+  /* Main Page */
+
+  .split-screen{
+    text-align: center;
+    padding: 170px 150px;
+  }
+
+  .application-half{
+    background-color: #EEEEEE;
+  }
+
+  .presentation-half{
+    background-color: #F6F6F6;
+  }
+
+  .main-text{
+    font-size: 60px;
+    text-align: center;
+    color: black;
+  }
+
+  .main-para{
+    font-size: 12px;
+  }
+
+
+
+/* Features */
+
+  .features-page{
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .features-content-container{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+
+  .features-text{
+    font-size: 50px;
+    margin-left: 50px;
+  }
+
+/* Pricing */
+
+.pricing-page{
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+}
+
+
+.card-container{
+  padding: 100px 0;
+}
+
+.title{
+  font-size: 24px;
+}
+
+/* Footer */
+
+  .footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+
+    
+  }
+
+  .footer-text{
+    color: white;
+    padding: 5px 0;
+  }
+
+
+  /* Media Queries */
+
+  @media (max-width: 991px){
+    .card-container{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-div{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .offcanvas-wrapper{
+      background-color: #EEEEEE;
+  
+    }
+   
+  }
+
+

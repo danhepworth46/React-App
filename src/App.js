@@ -1,11 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {useWindowSize, useWindowWidth} from '@react-hook/window-size';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
-
+const windowSize = useWindowSize();
 const currentWidth = useWindowWidth();
 
  return (
@@ -26,7 +25,7 @@ const currentWidth = useWindowWidth();
             <hr className="d-lg-none"></hr>
                   <ul className="navbar-nav justify-content-end flex-grow-1 flex-row flex-wrap">
                     <li className="nav-item col-6 col-lg-auto">
-                      <a className="nav-link active" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} aria-current="page" href="#">Home</a>
+                      <a className="nav-link active" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} aria-current="page" href="#home">Home</a>
                     </li>
                   
                     <li className="nav-item col-6 col-lg-auto">
@@ -81,7 +80,7 @@ const currentWidth = useWindowWidth();
     <section className="features-page" id="features">
 
       <div className="features-content-container row">
-        <div className="col-lg-6 image-container g-0"><img className="image" src="./images/watch.jpg"></img></div>
+        <div className="col-lg-6 image-container g-0"><img className="image" src="./images/watch.jpg" alt="The Product watch"></img></div>
         <h2 className="features-text col-lg-6">Bold new designs <br></br> A brand new face. <br></br> This is The Product 22.</h2>
       </div>
 

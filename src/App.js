@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import {useWindowSize, useWindowWidth, useWindowHeight} from '@react-hook/window-size';
+import {useWindowSize, useWindowWidth} from '@react-hook/window-size';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
@@ -8,20 +8,11 @@ function App() {
 
 const currentWidth = useWindowWidth();
 
-// const [padding, setPadding] = useState(88)
-// const cardPadding = document.getElementsByClassName('pricing-div')[0].style.currentWidth;
-// console.log(cardPadding)
-
-// function responsivePadding(){
-//   setPadding(2)
-// }
-
-
  return (
   <div>
     <nav className="navbar bg-primary navbar-expand-lg fixed-top">
         <div className="container-fluid">
-          <a className="navbar-brand" style={{color: "white"}} href="#">The Product</a>
+          <a className="navbar-brand" style={{color: "white"}} href="#home">The Product</a>
           <button className="navbar-toggler shadow-none" style={{border: "none"}} type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <FontAwesomeIcon className="toggler" icon={faBars} />         
           </button>
@@ -95,8 +86,7 @@ const currentWidth = useWindowWidth();
       </div>
 
     </section>
-    {/* onChange={responsivePadding} style={{"paddingLeft": {padding} + "px", "paddingRight": {padding} + "px"}} */}
-    <section className="pricing-page " id="pricing" >
+    <section className="pricing-page" id="pricing" >
       <div className="row card-container">
         <div className="pricing-div col-xl-3 col-lg-6">
   

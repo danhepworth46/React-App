@@ -1,11 +1,9 @@
 import React from "react";
-import {useWindowSize, useWindowWidth} from '@react-hook/window-size';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
-const windowSize = useWindowSize();
-const currentWidth = useWindowWidth();
+
 
  return (
   <div>
@@ -25,19 +23,19 @@ const currentWidth = useWindowWidth();
             <hr className="d-lg-none"></hr>
                   <ul className="navbar-nav justify-content-end flex-grow-1 flex-row flex-wrap">
                     <li className="nav-item col-6 col-lg-auto">
-                      <a className="nav-link active" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} aria-current="page" href="#home">Home</a>
+                      <a className="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                   
                     <li className="nav-item col-6 col-lg-auto">
-                      <a className="nav-link" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} href="#features">Features</a>
+                      <a className="nav-link" href="#features">Features</a>
                     </li>
                     
 
                     <li className="nav-item col-6 col-lg-auto">
-                      <a className="nav-link" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} href="#pricing">Pricing</a>
+                      <a className="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li className="nav-item col-6 col-lg-auto">
-                      <a className="nav-link" style={currentWidth >= 990 ? {color: "white"} : {color: "black"}} href="#contact">Contact Us</a>
+                      <a className="nav-link"  href="#contact">Contact Us</a>
                     </li>
                     
 

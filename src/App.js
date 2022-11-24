@@ -61,14 +61,14 @@ function App() {
           <div className="offcanvas-body offcanvas-wrapper p-4 pt-0 p-lg-0">
           <hr className="d-lg-none"></hr>
             <ul className="sidebar-list">
-              <li className="sidebar-list-item nav-item"><a className="nav-link">Connectivity</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">Our Story</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">Sharing with friends</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">Outreach</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">2021 Lineup</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">FAQ's</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">About us</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link">Ask Us</a></li>  
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Connectivity</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Our Story</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Sharing with friends</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Outreach</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">2021 Lineup</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">FAQ's</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">About us</a></li>
+              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Ask Us</a></li>  
               <input className="form-control me-2 search shadow-none" type="search" placeholder="Search"></input>
             </ul>
           </div>  

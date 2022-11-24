@@ -61,14 +61,14 @@ function App() {
           <div className="offcanvas-body offcanvas-wrapper p-4 pt-0 p-lg-0">
           <hr className="d-lg-none"></hr>
             <ul className="sidebar-list">
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Connectivity</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Our Story</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Sharing with friends</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Outreach</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">2021 Lineup</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">FAQ's</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">About us</a></li>
-              <li className="sidebar-list-item nav-item"><a className="nav-link" href="#">Ask Us</a></li>  
+              <li className="sidebar-list-item nav-item"><p className="nav-link">Connectivity</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">Our Story</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">Sharing with friends</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">Outreach</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">2021 Lineup</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">FAQ's</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">About us</p></li>
+              <li className="sidebar-list-item nav-item"><p className="nav-link">Ask Us</p></li>  
               <input className="form-control me-2 search shadow-none" type="search" placeholder="Search"></input>
             </ul>
           </div>  

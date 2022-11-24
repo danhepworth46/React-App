@@ -25,6 +25,12 @@
     padding: 0 10px;
   }
 
+  .nav-link{
+    border: none;
+    background-color: none;
+    text-decoration: none;
+  }
+
   .navbar-toggler{
     border: none;
   }

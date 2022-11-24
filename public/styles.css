@@ -1,15 +1,15 @@
-  
- 
- :root{
-  --padding: var(--padding)
- }
- 
+
  
  *{
     overflow-x: hidden;
   }
 
+
   /* Navbar */
+
+  .nav{
+    z-index: 1;
+  }
 
   .navbar{
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
@@ -33,12 +33,23 @@
     color: white;
   }
 
+  .navbar li a{
+    color: white;
+  }
+
+  .navbar li a:hover{
+    color: #EEEEEE;
+  }
+
+  .hidden-lg{
+    display: none;
+    visibility: hidden;
+  }
 
   /* Sidebar */
 
   .sidebar{
-    width: 240px;
-    padding-top: calc(150px - 46px);
+    padding-top: calc(150px - 54px);
     overflow-y: visible;
     overflow-x: hidden;
     top: 0;
@@ -46,28 +57,32 @@
     background-color: rgba(0, 0, 0, 0.03);
     border-right: 1px solid #ececec;
     position: fixed;
-    z-index: 1;
     height: 100%;
-
+    width: 250px;
   }
 
   .sidebar-list-item{
-    padding: 10px 0 10px 10px;
+    padding: 10px 0;
+    
   }
 
   .search{
     margin: 20px 0 0 0;
-    max-width: 140px;
+    max-width: 180px;
+   
   }
+
+  /* First Section */
 
   /* Main Page */
 
   .main{
-    padding-left: 240px;
+    margin-left: 250px;
+   
   }
 
   .main-page{
-    padding: calc(150px - 46px) calc(100px - 12px) 0 calc(100px - 12px);
+    padding: calc(150px - 54px) calc(100px - 12px) 0 calc(100px - 12px);
   }
 
   .box-container{
@@ -76,9 +91,10 @@
   }
 
   .box{
-    background-color: white;
+    background-color: #DFF6FF;
     padding: 15%;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.375rem;
+
   }
 
   .box-heading{
@@ -91,7 +107,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: white;
-    padding: 50px 100px 0 100px;
+    padding: 25px 100px 50px 100px;
   }
 
   .features-content-container{
@@ -99,11 +115,17 @@
     flex-direction: row;
     align-items: center;
     background-color: #DFF6FF;
+    border-top-right-radius: 0.375rem;
+    border-bottom-right-radius: 0.375rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+
   }
 
   .image{
     height: auto;
     width: 100%;
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
   }
 
   .features-text{
@@ -113,10 +135,30 @@
     justify-content: center;
   }
 
+  
+
+  /* HR */
+
+.section-break{
+  border: 1px solid #ececec;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+}
+
+  /* Second Section */
+  
   /* Pricing */
 
   .pricing-page{
-    padding: 50px 88px;
+    padding: 50px 88px 0px 88px;
+  }
+
+  .section-heading{
+    padding: 0 0 25px 0;
+    font-size: 100px;
+    line-height: 1;
   }
 
   .pricing-div{
@@ -129,6 +171,25 @@
     font-size: 24px;
   }
 
+  .ellipsis{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+  }
+
+  /* Carousel */
+
+  .carousel-section{
+    padding: 25px 88px 50px 88px;
+  }
+
+  .carousel-inner{
+    border-radius: 0.375rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
+
+
+  }
+
   /* Footer */
 
   .footer{
@@ -138,17 +199,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
-    z-index: 2;
-    position:sticky;
+    background-color: white;
+    position: sticky;
+    border-top: 1px solid #ececec;
   }
 
   .footer-text{
-    color: white;
-    padding: 5px 0;
+    padding: 10px 0;
   }
 
+
   /* Media Queries */
+
+  @media (max-width: 1400px){
+    .pricing-div{
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+  }
 
   @media (max-width: 1220px){
     .features-text{
@@ -165,10 +234,6 @@
   }
 
   @media (max-width: 1199px){
-    .pricing-div{
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
 
     .box{
       padding: 10%;
@@ -194,12 +259,53 @@
 
     .features-text{
       text-align: center;
-      padding: 50px 0;
+      padding: 25px 0;
     }
 
     .box{
       margin: 10px 0;
     }
+
+    .navbar li a{
+      color: black;
+    }
+
+    .navbar li a:hover{
+      color: #282828;
+    }
+
+    .sidebar{
+      width: 0;
+      position:static;    
+    }
+
+    .sidebar-list{
+      padding-left: 0;
+    }
+
+    .search{
+     max-width: 300px;
+    }
+
+    .hidden-lg{
+      display: block;
+      visibility: visible;
+    }
+
+    .main{
+      margin: auto;
+    }
+
+    .main-page{
+      padding: 0 calc(100px - 12px) 0 calc(100px - 12px);
+    }
+
+    .e-lg{
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; 
+    }
+
   }
 
  
@@ -212,6 +318,10 @@
     .features-text{
       font-size: 24px;
       padding: 20px 0;
+    }
+
+    .card{
+      width: 100%;
     }
   }
   
